@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	pool, _ := database.ConnectDB("postgres://postgres:1234@localhost:5432/postgres")
+	pool, _ := database.ConnectDB("")
 	cli.RunCLI()
 
 	defer database.CloseDB(pool)
